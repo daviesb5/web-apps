@@ -1,0 +1,143 @@
+body {
+  width: 300px;
+  margin: auto;
+  padding-top: 0.01px;
+  padding-bottom: 0.01px;
+  background-color: rgb(101, 194, 155);
+  /*text*/
+  font-family: "Trebuchet MS", "Lucida Sans Unicode",  Arial;
+  text-align: center;
+  font-size: 1.35em;
+}
+/*
+=======================
+MAIN DIVs
+=======================
+*/
+.spacing {
+  /*margins*/
+  box-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 0.02px;
+  padding-bottom: 0.02px;
+}
+.smallText {
+  font-size: 1.00em;
+}
+.medText {
+  font-size: 1.25em;
+}
+.bigText {
+  font-size: 2.25em;
+  color: gray;
+  width: 270px;
+}
+#inputVal {
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: visible;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#displayVal {
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: visible;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.basicScreen {
+  /*rgb (252, 252, 252)*/
+  background-color: #fcfcfc;
+  color: #c0c0c0;
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow:hidden;
+}
+.operations {
+  /*rgb (57, 183, 209)*/
+  background-color:	#39b7d1;
+  color: #fcfcfc;
+  margin-bottom: 0px;
+  padding-bottom: -0.015px;
+}
+.numPad {
+  /*rgb (57, 53, 53)*/
+  background-color:	#393535;
+  color: #afafaf;
+  padding-bottom: 25px;
+  margin-top: 0px;
+  padding-top: -0.015px;
+}
+/*
+.inBetweenOper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.inBetween {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.inBetweenDot {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.yellowDot {
+  //rgb (230, 247, 65)
+  background-color:	#e6f741;
+  color: #393535;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+*/
+/*
+=======================
+BUTTONS
+=======================
+*/
+.operBtn {
+  background-color:	#39b7d1;
+  color: #fcfcfc;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 2px 2px;
+  cursor: pointer;
+  border: none;
+}
+.numBtn {
+  background-color:	#393535;
+  color: #afafaf;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.00em;
+  margin: 3px 2px;
+  cursor: pointer;
+  border: none;
+}
+.yelBtn {
+  background-color:	#e6f741;
+  color: #393535;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.00em;
+  margin: 3px 2px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 50%;
+}

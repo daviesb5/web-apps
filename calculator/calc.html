@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="calc.css">
+  <script src="calc.js"></script>
+  <script src="big.min.js"></script>
+</head>
+
+<body onload="loadedCalc()">
+  <div>
+    <div class="basicScreen spacing">
+      <div class="smallText">
+        <div id="inputVal">
+          0
+        </div>
+      </div>
+      <div class="bigText">
+        <div id="answerDisplay">
+          0
+        </div>
+      </div>
+    </div>
+    <div class="operations spacing">
+      <!-- [÷ x + -] -->
+      <span>
+        <button class="operBtn" onclick="performOper('addi')">
+          &plus;
+        </button>
+        <button class="operBtn" onclick="performOper('subt')">
+          &minus;
+        </button>
+        <button class="operBtn" onclick="performOper('mult')">
+          &times;
+        </button>
+        <button class="operBtn" onclick="performOper('divi')" ;>
+          &divide;
+        </button>
+      </span>
+    </div>
+    <div class="numPad spacing smallText">
+      <!--7, 8, 9-->
+      <div>
+        <button class="numBtn" onclick="enterVal('7');">
+          7
+        </button>
+        <button class="numBtn" onclick="enterVal('8');">
+          8
+        </button>
+        <button class="numBtn" onclick="enterVal('9');">
+          9
+        </button>
+      </div>
+      <!--4, 5, 6-->
+      <div>
+        <button class="numBtn" onclick="enterVal('4');">
+          4
+        </button>
+        <button class="numBtn" onclick="enterVal('5');">
+          5
+        </button>
+        <button class="numBtn" onclick="enterVal('6');">
+          6
+        </button>
+      </div>
+      <!--1, 2, 3-->
+      <div>
+        <button class="numBtn" onclick="enterVal('1');">
+          1
+        </button>
+        <button class="numBtn" onclick="enterVal('2');">
+          2
+        </button>
+        <button class="numBtn" onclick="enterVal('3');">
+          3
+        </button>
+      </div>
+      <!--C . 0-->
+      <div>
+        <button class="yelBtn" onclick="resetCalc();">
+          C
+        </button>
+        <button class="numBtn" onclick="enterVal('.');">
+          .
+        </button>
+        <button class="numBtn" onclick="enterVal('0');">
+          0
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
