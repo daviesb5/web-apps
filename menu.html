@@ -4,10 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Games & Web-Apps</title>
-
+    <link rel="stylesheet" href="../css/main-style.css">
+	<link rel="stylesheet" href="../css/sample-style.css">
 </head>
 
 <body>
+    <div class="nav-layout" id="nav">
+        <!--BD Logo-->
+        <div class="logo-div">
+            <a class="logo-link" href="index.html#header">
+                <img class="logo" src="../img/logos/svg/solid_black_1.svg" alt="BD Logo"><br>
+            </a>
+        </div>
+        <!--NAVIGATION MENU-->
+        <div class="nav-div">
+            <a href="about.html" class="nav-btn">
+                About Me
+            </a>
+            <a href="credits.html" class="nav-btn">
+                Credits
+            </a>
+            <a href="web-apps/menu.html" class="nav-btn">
+                Apps & Games
+            </a>
+            <a href="samples/index.html" class="nav-btn">
+                Samples
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+        </div>
+    </div>
+
     <div class="header-layout" id="header">
         <div class="header-overlay"></div>
         <div class="header-vid">
@@ -15,14 +45,53 @@
                 <source src="../vid/khet-game-1.MP4" type="video/mp4">
             </video>
         </div>
-
         <div class="header-text">
             <h1>
                 Games & Web-Apps
             </h1>
-            <h2>
+        </div>
+    </div>
+
+    <div class="section-layout">
+        <div class="section-text">
+            <h3>
                 Check out examples of my work
-            </h2>
+            </h3>
+            <div class="detail-text">
+                <span>
+                    Roll over something to learn more...
+                </span>
+            </div>
+        </div>
+        <div class="grid-layout">
+            <div class="sample-cell">
+                <a href="calculator/calc.html" target="_blank">
+                    <img class="flex-img-cell white-bg" src="img/tn/calc-img.png" alt="Calculator" id="calc"
+                        onclick="checkImg(this.id);">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-layout">
+        <div class="grid-layout">
+            <div class="social-media-cell">
+                <a class="logo-link" href="https://www.facebook.com/BraedonDaviesProfile/?modal=admin_todo_tour"
+                    target="_blank">
+                    <img class="flex-img-cell dark-bg" src="../img/media-icons/fb-(char).png" alt="Facebook">
+                </a>
+            </div>
+            <div class="music-cell">
+                <a class="logo-link" href="https://www.linkedin.com/in/braedon-davies-a7859162/" target="_blank">
+                    <img class="flex-img-cell dark-bg" src="../img/media-icons/in-(char).png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>
+                &copy BraedonDavies.com
+                <script>document.write(new Date().getFullYear())</script>
+            </p>
         </div>
     </div>
 </body>
