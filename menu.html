@@ -3,97 +3,182 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Games & Web-Apps</title>
+	<!--
+	Traversy Media
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!--
+        Other items
+    -->
+    <script type="text/javascript" src="../js/page-layout.js"></script>
     <link rel="stylesheet" href="../css/main-style.css">
-	<link rel="stylesheet" href="../css/sample-style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/special-fx.css">
+    <link rel="stylesheet" href="../css/vid-fx.css">
+    <title>Apps & Games</title>
 </head>
 
-<body>
-    <div class="nav-layout" id="nav">
-        <!--BD Logo-->
-        <div class="logo-div">
-            <a class="logo-link" href="index.html#header">
-                <img class="logo" src="../img/logos/svg/solid_black_1.svg" alt="BD Logo"><br>
-            </a>
+<body onload="hamMenu(); setImage('web-apps');">
+    <div class="ham-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
         </div>
-        <!--NAVIGATION MENU-->
-        <div class="nav-div">
-            <a href="about.html" class="nav-btn">
-                About Me
-            </a>
-            <a href="credits.html" class="nav-btn">
-                Credits
-            </a>
-            <a href="web-apps/menu.html" class="nav-btn">
-                Apps & Games
-            </a>
-            <a href="samples/index.html" class="nav-btn">
-                Samples
-            </a>
-        </div>
-        <div class="hamburger-menu">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../index.html#home-ref" class="nav-btn" id="home-btn">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../about.html" class="nav-btn" id="about-btn">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../web-apps/menu.html" class="nav-btn" id="apps-btn">
+                                Apps & Games
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../samples/index.html" class="nav-btn" id="samples-btn">
+                                Samples
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../credits.html" class="nav-btn" id="credits-btn">
+                                Credits
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="header-layout" id="header">
-        <div class="header-overlay"></div>
-        <div class="header-vid">
+    <div class="nav-wrap" id="nav">
+        <!--NAVIGATION MENU-->
+        <div class="nav-menu">
+            <!--BD Logo-->
+            <div class="nav-btn">
+                <div>
+                    <a href="../index.html#home-ref">
+                        <img class="logo" src="../img/logos/svg/solid_white_1.svg" alt="BD Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <div>
+                    <a href="../about.html">
+                        About Me
+                    </a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <div>
+                    <a href="../web-apps/menu.html">
+                        Apps & Games
+                    </a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <div>
+                    <a href="../samples/index.html">
+                        Samples
+                    </a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <div>
+                    <a href="../credits.html">
+                        Credits
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <video autoplay muted loop id="header-vid">
+        <source src="vid/khet-game-1.MP4" type="video/mp4">
+    </video>
+    -->
+
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
             <video autoplay muted loop id="header-vid">
                 <source src="../vid/khet-game-1.MP4" type="video/mp4">
             </video>
         </div>
-        <div class="header-text">
-            <h1>
-                Games & Web-Apps
-            </h1>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Apps & Games</h1>
         </div>
-    </div>
+    </header>
 
     <div class="section-layout">
-        <div class="section-text">
-            <h3>
-                Check out examples of my work
-            </h3>
-            <div class="detail-text">
-                <span>
-                    Roll over something to learn more...
-                </span>
+        <div>
+            <div class="section-text">
+                <h3>
+                    Check out examples of my work
+                </h3>
+                <div class="detail-text">
+                    <span>
+                        Roll over something to learn more...
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="grid-layout">
-            <div class="sample-cell">
-                <a href="calculator/calc.html" target="_blank">
-                    <img class="flex-img-cell white-bg" src="img/tn/calc-img.png" alt="Calculator" id="calc"
-                        onclick="checkImg(this.id);">
-                </a>
+        <div>
+            <div class="grid-layout">
+                <div class="sample-cell">
+                    <a href="calculator/calc.html" target="_blank">
+                        <img class="flex-img-cell white-bg" src="img/tn/calc-img.png" alt="Calculator" id="calc"
+                            onclick="checkImg(this.id);">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="footer-layout">
-        <div class="grid-layout">
-            <div class="social-media-cell">
-                <a class="logo-link" href="https://www.facebook.com/BraedonDaviesProfile/?modal=admin_todo_tour"
-                    target="_blank">
-                    <img class="flex-img-cell dark-bg" src="../img/media-icons/fb-(char).png" alt="Facebook">
-                </a>
-            </div>
-            <div class="music-cell">
-                <a class="logo-link" href="https://www.linkedin.com/in/braedon-davies-a7859162/" target="_blank">
-                    <img class="flex-img-cell dark-bg" src="../img/media-icons/in-(char).png" alt="LinkedIn">
-                </a>
+    <footer class="footer-layout">
+        <div class="footer-div">
+            <div class="flex-div">
+                <div class="container">
+                    <div class="container-child">
+                        <div class="media-btn">
+                            <div>
+                                <a href="https://www.facebook.com/BraedonDaviesProfile/?modal=admin_todo_tour"
+                                    target="_blank">
+                                    <img class="logo" src="../img/media-icons/fb-(char).png" alt="Facebook">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-btn">
+                            <div>
+                                <a href="https://www.linkedin.com/in/braedon-davies-a7859162/" target="_blank">
+                                    <img class="logo" src="../img/media-icons/in-(char).png" alt="LinkedIn">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-child">
+                        <div class="section-text">
+                            <p>
+                                &copy BraedonDavies.com
+                                <script>document.write(new Date().getFullYear())</script>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-text">
-            <p>
-                &copy BraedonDavies.com
-                <script>document.write(new Date().getFullYear())</script>
-            </p>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>
